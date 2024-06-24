@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import authRoute from "./routes/auth.routes.js";
 import messageRoute from "./routes/message.routes.js";
+import userRoute from "./routes/user.routes.js";
 
 dotenv.config();
 
@@ -16,6 +17,8 @@ app.use(cookieParser());
 
 app.use("/api/auth/", authRoute);
 app.use("/api/message/", messageRoute);
+app.use("/api/user/", userRoute);
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
