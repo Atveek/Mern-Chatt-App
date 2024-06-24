@@ -8,5 +8,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
+
+/* WebKit Browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* for horizontal scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: #555;
+}
+::-webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #121212 #555;
+}
+
+/* Microsoft Edge and Internet Explorer */
