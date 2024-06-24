@@ -1,11 +1,12 @@
 import "./App.css";
-import Register from "./components/Register";
+import SignUp from "./pages/signup/SignUp";
+// import Login from "./pages/login/Login";
 
 function App() {
   return (
-    <>
-      <Register></Register>
-    </>
+    <div className="p-4 h-screen flex items-center justify-center">
+      <SignUp></SignUp>
+    </div>
   );
 }
 
